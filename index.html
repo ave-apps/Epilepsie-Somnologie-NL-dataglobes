@@ -2054,7 +2054,7 @@ window.addEventListener('resize',resize);resize();
         // Verberg alles
         sat.visible = false;
         letters.forEach(l => { l.sprite.visible = false; l.sprite.material.opacity = 0; });
-        // Na 30 seconden opnieuw beginnen
+        // Na 1 uur opnieuw beginnen
         setTimeout(function(){
           phase = 'orbit'; window._satPhase = phase;
           orbitCount = 0;
@@ -2072,7 +2072,7 @@ window.addEventListener('resize',resize);resize();
             l.sprite.visible = false;
             l.sprite.material.opacity = 0;
           });
-        }, 30000);
+        }, 3600000);
       }
       return;
     }
